@@ -5,11 +5,20 @@ Simulation Code for S. Gangadhar, Z. Wang, H. Jing and Y. Nakahira, "Adaptive Sa
 Please refer to the "Vehicle_Dynamics_Model_Readme.pdf" for details on the vehicle model and how the simulation was setup to incorporate SIMD vectorization and other numerical stability components.
 
 ## Strcture 
-* the project contains a .cpp file titled "fullVehicleSimulation" that contains all of the simulation code and a .py file titled "plotResults" that plots the simulation results.
-* to run, simply execute the run.sh shell scipt.
+* the project root is a self-contained C++ code without a cmakelist
+* no cmake or make required
+* the code makes use of Eigen, a C++ library of template headers for linear algebra
+* an implementation of a QP-Solver is included as a header file
+* main code is fullVehicleSimulation.cpp
 
 ## Development
 **Requirements:**
 * Ubuntu 20.04
+* GCC is required with atleast c++17
 * Eigen 3.4 installed using cmake and make, see [Eigen: Getting Started][https://eigen.tuxfamily.org/dox/GettingStarted.html]
 * Python3 with numpy, matplotlib, and scipy
+
+## How to run
+
+* for Linux and Mac, run the following command: 
+> . run.sh
