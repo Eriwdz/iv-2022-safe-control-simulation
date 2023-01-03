@@ -6,9 +6,7 @@ Please refer to the "Vehicle_Dynamics_Model_Readme.pdf" for details on the vehic
 
 ## Strcture 
 * the project root is a self-contained C++ code without a cmakelist
-* no cmake or make required
 * the code makes use of Eigen, a C++ library of template headers for linear algebra
-* an implementation of a QP-Solver is included as a header file
 * main code is fullVehicleSimulation.cpp
 
 ## Development
